@@ -57,10 +57,6 @@ ground1.display();
   if (keyCode === UP_ARROW){
 	  Matter.body.applyForce(bob1.body,bob1.body.position,{x:45,y:85})
   }
-  drawSprites();
-
-  strokeWeight(3);
-  line(bob1.body.position.x,bob1.body.position.y,ground1.body.position.x,ground1.body.position.y);
  
 }
 
