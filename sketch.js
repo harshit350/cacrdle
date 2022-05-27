@@ -6,40 +6,31 @@ const Body = Matter.Body;
 const Constraint = Matter.Constraint;
 var bob1,bob2,bob3,bob4,bob5;
 var rope1,rope2,rope3,rope4,rope5
-var ground;
+var ground1;
 
 
 function setup() {
 	createCanvas(1000, 700);
 	engine = Engine.create();
 	world = engine.world;
-  
+ ground1= new ground(470,250,20) 
  bob1=new bob(270,550,100);
- rope1=new Rope(bob1.body,ground.body,-50*2,3)
+ rope1=new Rope(bob1.body,ground1.body,-50*2,3)
  bob2=new bob(350,550,100);
- rope2=new Rope(bob2.body,ground.body,-50*2,3)
+ rope2=new Rope(bob2.body,ground1.body,-50*2,3)
  bob3=new bob(470,550,100);
- rope3=new Rope(bob3.body,ground.body,-50*2,3)
+ rope3=new Rope(bob3.body,ground1.body,-50*2,3)
  bob4=new bob(550,550,100);
- rope4=new Rope(bob4.body,ground.body,-50*2,3)
+ rope4=new Rope(bob4.body,ground1.body,-50*2,3)
  bob5=new bob(670,550,100);
- rope5=new Rope(bob5.body,ground.body,-50*2,3)
+ rope5=new Rope(bob5.body,ground1.body,-50*2,3)
 
-	ground=createSprite(500,100,700,50);
-	ground.shapeColor=color("silver")
+	
+	
 
 	
 
-	var options={
-		bodyA:bob1.body,
-		bodyB:ground.body,
-		stiffness: 0.04,
-		lenght:10
-	}
-
-	var rope=constraint.create(options)
-	World.add(world,rope);
-	Engine.run(engine);
+	
 }
 
 
