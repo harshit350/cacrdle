@@ -15,15 +15,15 @@ function setup() {
 	world = engine.world;
  ground1= new Ground(470,250,20) 
  bob1=new bob(270,550,100);
- rope1=new Rope(bob1.body,Ground1.body,-50*2,3)
+ rope1=new Rope(bob1.body,ground1.body,-50*2,3)
  bob2=new bob(350,550,100);
- rope2=new Rope(bob2.body,Ground1.body,-50*2,3)
+ rope2=new Rope(bob2.body,ground1.body,-50*2,3)
  bob3=new bob(470,550,100);
- rope3=new Rope(bob3.body,Ground1.body,-50*2,3)
+ rope3=new Rope(bob3.body,ground1.body,-50*2,3)
  bob4=new bob(550,550,100);
- rope4=new Rope(bob4.body,Ground1.body,-50*2,3)
+ rope4=new Rope(bob4.body,ground1.body,-50*2,3)
  bob5=new bob(670,550,100);
- rope5=new Rope(bob5.body,Ground1.body,-50*2,3)
+ rope5=new Rope(bob5.body,ground1.body,-50*2,3)
 
 	
 	
@@ -60,7 +60,7 @@ ground1.display();
   drawSprites();
 
   strokeWeight(3);
-  line(bob1.body.position.x,bob1.body.position.y,Ground.body.position.x,Ground.body.position.y);
+  line(bob1.body.position.x,bob1.body.position.y,ground1.body.position.x,ground1.body.position.y);
  
 }
 
