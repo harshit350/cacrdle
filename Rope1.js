@@ -15,13 +15,16 @@ class Rope {
     display(){
 
     
-var pointA=this.rope.bodyA.position;
-var pointB=this.rope.bodyB.position;
 
 
 strokeWeight(5);
+        
+var Anchor1X=pointA.x 
+var Anchor1Y=pointA.y
+var Anchor2X=pointB.x+this.offsetX 
+var Anchor2Y=pointB.y+this.offsetY
 
-line(pointA.x,pointA.y,pointB.x,pointB.y);
+line(anchor1X,anchor1Y,anchor2X,anchor2Y);
 }
 
 }
