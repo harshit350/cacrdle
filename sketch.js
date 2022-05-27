@@ -1,4 +1,4 @@
-
+	
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -13,17 +13,17 @@ function setup() {
 	createCanvas(1000, 700);
 	engine = Engine.create();
 	world = engine.world;
- ground1= new ground(470,250,20) 
+ ground1= new Ground(470,250,20) 
  bob1=new bob(270,550,100);
- rope1=new Rope(bob1.body,ground1.body,-50*2,3)
+ rope1=new Rope(bob1.body,Ground1.body,-50*2,3)
  bob2=new bob(350,550,100);
- rope2=new Rope(bob2.body,ground1.body,-50*2,3)
+ rope2=new Rope(bob2.body,Ground1.body,-50*2,3)
  bob3=new bob(470,550,100);
- rope3=new Rope(bob3.body,ground1.body,-50*2,3)
+ rope3=new Rope(bob3.body,Ground1.body,-50*2,3)
  bob4=new bob(550,550,100);
- rope4=new Rope(bob4.body,ground1.body,-50*2,3)
+ rope4=new Rope(bob4.body,Ground1.body,-50*2,3)
  bob5=new bob(670,550,100);
- rope5=new Rope(bob5.body,ground1.body,-50*2,3)
+ rope5=new Rope(bob5.body,Ground1.body,-50*2,3)
 
 	
 	
@@ -42,6 +42,17 @@ function draw() {
   bob3.display();
   bob4.display();
   bob5.display();
+rope1.display();	
+	rope2.display();	
+rope3.display();	
+rope4.display();	
+rope5.display();
+ground1.display();	
+
+	
+	
+	
+	
 
   if (keyCode === UP_ARROW){
 	  Matter.body.applyForce(bob1.body,bob1.body.position,{x:45,y:85})
@@ -49,7 +60,7 @@ function draw() {
   drawSprites();
 
   strokeWeight(3);
-  line(bob1.body.position.x,bob1.body.position.y,ground.body.position.x,ground.body.position.y);
+  line(bob1.body.position.x,bob1.body.position.y,Ground.body.position.x,Ground.body.position.y);
  
 }
 
