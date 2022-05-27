@@ -9,7 +9,7 @@ class Rope {
             pointB:{x:this.offsetX,y:this.offsetY}
       }
    this.rope=constraint.create(options)
-   world.add(world,this.rope)
+   World.add(world,this.rope)
    
     }
     display(){
