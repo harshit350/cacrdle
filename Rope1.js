@@ -27,4 +27,4 @@ var Anchor2Y=pointB.y+this.offsetY
 line(anchor1X,anchor1Y,anchor2X,anchor2Y);
 }
 
-}
+} 
